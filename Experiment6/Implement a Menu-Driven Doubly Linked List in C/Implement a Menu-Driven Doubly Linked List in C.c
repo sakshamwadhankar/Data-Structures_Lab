@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Structure of a doubly linked list node
+
 struct Node {
     int data;
     struct Node* next;
     struct Node* prev;
 };
 
-// Head pointer of the first list
+
 struct Node* head = NULL;
 
 void display() {
@@ -62,7 +62,7 @@ void insert(int num) {
 
 }
 
-// Function to delete a specific number
+
 void deleteNumber(int num) {
 
 
@@ -98,7 +98,7 @@ void deleteNumber(int num) {
     
 }
 
-// Function to reverse the list
+
 void reverseList() {
 
 
@@ -125,7 +125,7 @@ void reverseList() {
 
 }
 
-// Function to concatenate another list
+
 void concatenate() {
 
 

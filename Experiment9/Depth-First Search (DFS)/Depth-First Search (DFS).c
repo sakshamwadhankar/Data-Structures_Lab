@@ -3,7 +3,7 @@
 
 #define MAX_VERTICES 100
 
-// Graph represented using adjacency list
+
 typedef struct Node {
     int vertex;
     struct Node* next;
@@ -12,9 +12,9 @@ typedef struct Node {
 Node* adjList[MAX_VERTICES];
 int visited[MAX_VERTICES];
 
-// Function to create a new adjacency list node
+
 Node* createNode(int vertex) {
-    //write your code here...
+    
          Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->vertex = vertex;
     newNode->next = NULL;
@@ -24,9 +24,9 @@ Node* createNode(int vertex) {
     
 }
 
-// Function to add an edge to the graph
+
 void addEdge(int u, int v) {
-    //write your code here...
+    
     Node* newNode = createNode(v);
 
     if (adjList[u] == NULL) {

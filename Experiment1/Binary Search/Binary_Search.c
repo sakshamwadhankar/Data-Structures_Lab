@@ -1,4 +1,4 @@
-/*Write a C program that performs a binary search to find the position of the given integer in the array.*/
+
 
 #include <stdio.h>
 

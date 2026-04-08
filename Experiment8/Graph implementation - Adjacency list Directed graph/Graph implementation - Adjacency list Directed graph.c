@@ -8,7 +8,7 @@ struct node {
 typedef struct node *GNODE;
 GNODE graph[20];
 
-/* helper function to create a node */
+
 GNODE createNode(int v) {
     GNODE temp = (GNODE)malloc(sizeof(struct node));
     temp->vertex = v;
@@ -16,7 +16,7 @@ GNODE createNode(int v) {
     return temp;
 }
 
-/* helper function to add edge at end */
+
 void addEdge(int src, int dest) {
     GNODE temp = createNode(dest);
     GNODE cur;

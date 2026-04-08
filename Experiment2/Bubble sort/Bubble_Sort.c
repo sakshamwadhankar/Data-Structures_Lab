@@ -1,4 +1,4 @@
-/*Write a C program that reads n integer numbers and arranges them in ascending order using Bubble Sort.*/
+
 
 #include <stdio.h>
 

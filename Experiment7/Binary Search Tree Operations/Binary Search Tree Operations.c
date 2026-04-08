@@ -6,7 +6,7 @@ struct TreeNode {
 	struct TreeNode* left;
 	struct TreeNode* right;
 };
-// Insert Node
+
 struct TreeNode* insertNode(struct TreeNode* root, int val) {
     if (root == NULL) {
         struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
@@ -23,15 +23,15 @@ struct TreeNode* insertNode(struct TreeNode* root, int val) {
     return root;
 }
 
-// -------- TRAVERSALS --------
 
-// Inorder
+
+
 void inorderTraversal(struct TreeNode* root) {
     if (root == NULL) {
         printf("The tree is empty\n");
         return;
     }
 
-    // normal traversal
+    
     struct TreeNode* stack[100];
 }

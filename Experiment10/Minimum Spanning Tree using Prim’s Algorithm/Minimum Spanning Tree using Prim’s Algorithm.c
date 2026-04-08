@@ -4,7 +4,7 @@
 #define V 100
 
 int minKey(int key[], bool mstSet[], int vertices) {
-	// Write your code here...
+	
 int min = INT_MAX, min_index;
 
     for (int v = 0; v < vertices; v++) {
@@ -25,7 +25,7 @@ void printTree(int parent[], int graph[V][V], int vertices) {
 }
 
 void prim(int graph[V][V], int vertices) {
-	// Write your code here...
+	
      int parent[V];
     int key[V];
     bool mstSet[V];

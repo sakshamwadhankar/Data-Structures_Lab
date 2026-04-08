@@ -8,7 +8,7 @@ struct node {
 
 typedef struct node *NODE;
 
-// Create a new node with given data
+
 NODE createNodeInCLL(int data) {
     NODE temp = (NODE) malloc(sizeof(struct node));
     temp->data = data;
@@ -16,10 +16,10 @@ NODE createNodeInCLL(int data) {
     return temp;
 }
 
-// Create CLL with n nodes
+
 NODE createCLL(   int n    ) {
 	
-// write your code here...
+
     NODE first = NULL, temp, last = NULL;
     int x;
 
@@ -45,10 +45,10 @@ NODE createCLL(   int n    ) {
 
 }
 
-// Traverse CLL
+
 void traverseListInCLL(  NODE first    ) {
 
-// write your code here...
+
     NODE temp = first;
 
     if(first == NULL) {
@@ -65,10 +65,10 @@ void traverseListInCLL(  NODE first    ) {
 
 }
 
-// Insert at given position in CLL
+
 NODE insertAtPositionInCLL( NODE first, int pos, int x        ) {
 	
-//write your code here..
+
     NODE newNode = createNodeInCLL(x);
 
     if(pos == 1) {
@@ -108,7 +108,7 @@ NODE insertAtPositionInCLL( NODE first, int pos, int x        ) {
 	
 }
 
-// Delete node at given position in CLL
+
 NODE deleteAtPositionInCLL( NODE first, int pos      ) {
     NODE temp = first, prev;
 
@@ -165,10 +165,10 @@ NODE deleteAtPositionInCLL( NODE first, int pos      ) {
 	
 }
 
-// Reverse CLL
+
 NODE reverseCLL(   NODE first     ) {
 	
-//write your code here...
+
     NODE prev = NULL, current = first, next = NULL;
     NODE last = first;
 
@@ -190,10 +190,10 @@ NODE reverseCLL(   NODE first     ) {
 
 }
 
-// Concatenate two CLLs
+
 NODE concatCLL(     NODE first, NODE second      ) {
 
-//write your code here..
+
 
     if(first == NULL) return second;
     if(second == NULL) return first;
@@ -262,7 +262,7 @@ int main() {
                 } else {
                     first = reverseCLL(first);
                     printf("CLL reversed\n");
-                    traverseListInCLL(first);   // <-- display reversed list
+                    traverseListInCLL(first);   
                 }
                 break;
             case 6:

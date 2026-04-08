@@ -1,4 +1,4 @@
-/*Write a program to sort the elements of an array in descending order using the Selection Sort algorithm.*/
+
 
 #include <stdio.h>
 
